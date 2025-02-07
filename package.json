@@ -1,6 +1,6 @@
 {
   "name": "@shorpo/express-sharp",
-  "version": "5.0.1",
+  "version": "5.0.5",
   "description": "Real-time image processing for your express application",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -16,7 +16,7 @@
     "etag": "^1.8.1",
     "got": "^11.8.6",
     "keyv": "^5.2.3",
-    "reflect-metadata": "^0.1.14",
+    "reflect-metadata": "^0.2.2",
     "sharp": "^0.33.5",
     "tsyringe": "^4.8.0"
   },
@@ -62,7 +62,7 @@
     "build:test": "tsc --noEmit",
     "build": "tsc --build tsconfig.build.json",
     "prebuild": "yarn clean",
-    "clean": "rimraf dist",
+    "clean": "rimraf dist && rimraf tsconfig.build.tsbuildinfo",
     "start:example": "DEBUG=express-sharp* nodemon --exec 'node -r ts-node/register' -w . --inspect example/app.ts",
     "lint": "eslint --cache .",
     "test": "jest",
