@@ -17,7 +17,7 @@
     "strictNullChecks": true,
     "strictFunctionTypes": true,
     "strictPropertyInitialization": true,
-    "target": "ESNext"
+    "target": "ES6"
   },
   "include": ["src/**/*", "__tests__/**/*", "example/**/*", "__mocks__/**/*"]
 }
