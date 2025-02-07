@@ -12,7 +12,7 @@ import {
 } from 'class-validator'
 import 'reflect-metadata'
 import { GravityEnum } from 'sharp'
-import { Transform } from './decorators'
+import { ToBoolean, ToNumber } from './decorators'
 import { format } from './interfaces'
 import { IsUrl } from './validator/is-url'
 
@@ -26,7 +26,7 @@ export class ResizeDto {
   @IsString()
   public format?: format
 
-  @Transform(Number)
+  @ToNumber()
   @IsOptional()
   @IsNumber({ allowInfinity: false, allowNaN: false })
   @IsInt()
@@ -34,27 +34,27 @@ export class ResizeDto {
   @Max(10_000)
   public height?: number
 
-  @Transform(Number)
+  @ToNumber()
   @IsNumber()
   @Min(1)
   @Max(10_000)
   public width: number = 500
 
-  @Transform(Number)
+  @ToNumber()
   @IsInt()
   @Min(0)
   @Max(100)
   public quality: number = 80
 
-  @Transform((value) => value === 'true')
+  @ToBoolean()
   @IsBoolean()
   public progressive: boolean = false
 
-  @Transform((value) => value === 'true')
+  @ToBoolean()
   @IsBoolean()
   public crop: boolean = false
 
-  @Transform((value) => value === 'true')
+  @ToBoolean()
   @IsBoolean()
   public trim: boolean = false
 

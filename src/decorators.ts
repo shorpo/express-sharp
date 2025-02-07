@@ -35,3 +35,9 @@ export function ToNumber() {
     makePropertyMapper(target, key, Number)
   }
 }
+
+export function ToBoolean() {
+  return function (target: unknown, key: string): void {
+    makePropertyMapper(target, key, (value) => value === 'true')
+  }
+}

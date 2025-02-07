@@ -1,6 +1,6 @@
 {
   "name": "@shorpo/express-sharp",
-  "version": "5.0.5",
+  "version": "5.0.6",
   "description": "Real-time image processing for your express application",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
