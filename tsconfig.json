@@ -17,7 +17,8 @@
     "strictNullChecks": true,
     "strictFunctionTypes": true,
     "strictPropertyInitialization": true,
-    "target": "ES2019"
+    "target": "ES2019",
+    "types": ["jest", "node"]
   },
   "include": ["src/**/*", "__tests__/**/*", "example/**/*", "__mocks__/**/*"]
 }

@@ -1,69 +1,60 @@
 {
-  "name": "express-sharp",
-  "version": "4.2.41",
+  "name": "@shorpo/express-sharp",
+  "version": "5.0.0",
   "description": "Real-time image processing for your express application",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "private": false,
   "dependencies": {
-    "class-validator": "^0.13.1",
+    "@types/debug": "^4.1.12",
+    "@types/etag": "^1.8.3",
+    "@types/node": "^22.13.1",
+    "class-validator": "^0.14.1",
     "cors": "^2.8.5",
-    "debug": "^4.3.2",
+    "debug": "^4.4.0",
     "dotenv": "^10.0.0",
     "etag": "^1.8.1",
-    "keyv": "^4.0.3",
-    "reflect-metadata": "^0.1.13",
-    "sharp": "^0.30.0",
-    "tsyringe": "^4.6.0"
+    "got": "^11.8.6",
+    "keyv": "^5.2.3",
+    "reflect-metadata": "^0.1.14",
+    "sharp": "^0.33.5",
+    "tsyringe": "^4.8.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.0.0",
-    "@commitlint/config-conventional": "^17.0.0",
+    "@commitlint/cli": "^17.8.1",
+    "@commitlint/config-conventional": "^17.8.1",
     "@heise/eslint-config": "^19.0.13",
-    "@keyv/redis": "^2.1.3",
-    "@semantic-release/changelog": "^6.0.0",
-    "@semantic-release/commit-analyzer": "^9.0.1",
-    "@semantic-release/git": "^10.0.0",
-    "@semantic-release/npm": "^9.0.0",
-    "@semantic-release/release-notes-generator": "^10.0.2",
-    "@types/cache-manager": "^4.0.0",
-    "@types/cors": "^2.8.12",
-    "@types/debug": "^4.1.7",
-    "@types/etag": "^1.8.1",
-    "@types/express": "^4.17.13",
-    "@types/got": "^9.6.12",
-    "@types/jest": "^27.0.2",
-    "@types/keyv": "^3.1.3",
-    "@types/node": "^14.17.27",
-    "@types/sharp": "^0.30.0",
-    "@types/supertest": "^2.0.11",
-    "aws-sdk": "^2.1009.0",
-    "eslint-plugin-no-only-tests": "^2.6.0",
-    "eslint-plugin-sort-keys-fix": "^1.1.2",
-    "express": "^4.17.1",
-    "got": "^11.8.2",
-    "husky": "^8.0.0",
-    "jest": "^27.3.0",
-    "lint-staged": "^13.0.0",
-    "nodemon": "^2.0.13",
-    "prettier": "^2.4.1",
-    "pug": "^3.0.2",
-    "rimraf": "^3.0.2",
-    "semantic-release": "^19.0.0",
-    "supertest": "^6.1.6",
-    "ts-jest": "^27.0.7",
-    "ts-node": "^10.3.0",
-    "typescript": "^4.4.4"
+    "@keyv/redis": "^2.8.5",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/npm": "^9.0.2",
+    "@semantic-release/release-notes-generator": "^10.0.3",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/jest": "^29.5.14",
+    "@types/supertest": "^6.0.2",
+    "aws-sdk": "^2.1692.0",
+    "express": "^4.21.2",
+    "husky": "^8.0.3",
+    "jest": "^29.7.0",
+    "lint-staged": "^13.3.0",
+    "nodemon": "^2.0.22",
+    "prettier": "^2.8.8",
+    "rimraf": "^6.0.1",
+    "semantic-release": "^19.0.5",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
   },
   "peerDependencies": {
-    "aws-sdk": "^2.713.0",
-    "express": "^4.0.0",
-    "got": "^11.5.0"
+    "aws-sdk": "^2.1692.0",
+    "express": "^4.21.2",
+    "sharp": "^0.33.5"
   },
   "peerDependenciesMeta": {
     "aws-sdk": {
-      "optional": true
-    },
-    "got": {
       "optional": true
     }
   },
@@ -79,11 +70,11 @@
     "prepare": "husky install"
   },
   "engines": {
-    "node": ">= 12.0.0"
+    "node": ">= 21.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pmb0/express-sharp.git"
+    "url": "git+https://github.com/shorpo/express-sharp.git"
   },
   "keywords": [
     "express",

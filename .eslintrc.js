@@ -1,9 +1,7 @@
 module.exports = {
   root: true,
   extends: ['@heise'],
-  plugins: ['sort-keys-fix', 'eslint-plugin-no-only-tests'],
   rules: {
-    'sort-keys-fix/sort-keys-fix': 'error',
     'no-prototype-builtins': 'off',
     'no-unused-vars': 'off',
     'security/detect-non-literal-fs-filename': 'off',

@@ -1,5 +1,4 @@
 import { promises as fs } from 'fs'
-import { mocked } from 'ts-jest/utils'
 import { FsAdapter } from './fs.adapter'
 
 jest.mock('fs')
@@ -22,7 +21,7 @@ describe('FsAdapter', () => {
     })
 
     it('returns undefined if the image does not exist', async () => {
-      mocked(fs.readFile).mockImplementation(() => {
+      jest.mocked(fs.readFile, { shallow: true }).mockImplementation(() => {
         const error = new Error('ohoh') as any
         error.code = 'ENOENT'
         throw error
